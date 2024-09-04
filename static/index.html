@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anemia Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Anemia Detection</h2>
+        <p>Anemia is a medical condition characterized by a deficiency of healthy red blood cells or a reduction in the amount of hemoglobin in the blood. Symptoms may include fatigue, weakness, and more.</p>
+        
+        <p><strong>Average Range of Hemoglobin and MCV (in units):</strong></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Gender</th>
+                    <th>Hemoglobin</th>
+                    <th>MCV</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Male</td>
+                    <td>12.0 - 15.0 g/dL</td>
+                    <td>80.0 - 95.0 fL</td>
+                </tr>
+                <tr>
+                    <td>Female</td>
+                    <td>11.5 - 14.5 g/dL</td>
+                    <td>82.0 - 98.0 fL</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <p><strong>Enter the required information:</strong></p>
+        <input type="radio" id="male" name="gender" value="Male" checked>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="number" id="hemoglobin" class="input-field" placeholder="Hemoglobin (g/dL)" step="0.1" min="0" value="12.0"><br>
+        <input type="number" id="mcv" class="input-field" placeholder="MCV (fL)" step="0.1" min="0" value="90.0"><br>
+        <button class="button" onclick="detectAnemia()">Detect</button>
+        <p id="result"></p>
+        <p id="type"></p>
+        <p><strong>Note:</strong> Please consult with a healthcare professional for accurate diagnosis and medical advice.</p>
+        <hr>
+        <button onclick="showInfo()">How this was prepared?</button>
+        <p id="info"></p>
+        <footer>
+            <p>Brought to you with ❤ by <a href="https://github.com/2003MADHAV">Madhav Kumar</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
